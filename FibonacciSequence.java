@@ -7,6 +7,7 @@ public class FibonacciSequence {
         int count = sc.nextInt();
 
         printFibonacciSequence(count);
+        sc.close();
     }
 
     private static void printFibonacciSequence(int count) {
