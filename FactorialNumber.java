@@ -8,6 +8,7 @@ public class FactorialNumber {
         int num = sc.nextInt();
 
         System.out.println("Factorial number is : " + findFactorial(num));
+        sc.close();
     }
 
     private static int findFactorial(int num) {

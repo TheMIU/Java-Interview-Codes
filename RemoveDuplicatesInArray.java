@@ -5,8 +5,8 @@ public class RemoveDuplicatesInArray {
         int[] arr = { 5, 2, 6, 4, 8, 5, 4, 2, 5, 6, 5, 3, 7 };
 
         System.out.println("before : " + Arrays.toString(arr));
-        int[] sorted = removeDuplicates(arr);
-        System.out.println("after  : " + Arrays.toString(sorted));
+        int[] unique = removeDuplicates(arr);
+        System.out.println("after  : " + Arrays.toString(unique));
 
         // using inbuilt method
         int[] uniqueArray = Arrays.stream(arr).distinct().toArray();
@@ -14,26 +14,6 @@ public class RemoveDuplicatesInArray {
     }
 
     private static int[] removeDuplicates(int[] arr) {
-       /*  int[] temp = new int[arr.length];
-
-        for (int i = 0; i < arr.length; i++) {
-            int count = 0;
-
-            for (int j = 0; j < temp.length; j++) {
-
-                if (arr[i] == temp[j]) {
-                    count++;
-                }
-            }
-            System.out.println(count);
-
-            if (count == 1) {
-                temp[i] = arr[i];
-            }
-        }
-
-        return temp; */
-
         Arrays.sort(arr); // Sort the array first
         int length = arr.length;
         
